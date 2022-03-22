@@ -5,5 +5,5 @@ from user.models import CustomUser
 
 
 @admin.register(CustomUser)
-class AccountAdmin(admin.ModelAdmin):
+class UserAdmin(admin.ModelAdmin):
     list_display = ("username", "email",)
