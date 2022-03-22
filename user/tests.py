@@ -12,6 +12,7 @@ class TestUserModel(TestCase):
         user = CustomUser.object.create(username='Usertest', email='test@test.fr', password='motdepasse445')
         user.save()
     
+    
     def test_user_model(self):
         """ """
         user_test = CustomUser.object.get(username='Usertest')
