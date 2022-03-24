@@ -11,4 +11,5 @@ class ProductViewset(viewsets.ModelViewSet):
     """
     serializer_class = ProductSerializer
     queryset = Product.objects.all()
+    filterset_fields = ['name', 'price', 'section']
     #premission_classe = [permissions.IsAuthenticated,]

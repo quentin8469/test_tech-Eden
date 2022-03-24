@@ -1,7 +1,6 @@
 from django.test import TestCase
-
-# Create your tests here.
 from product.models import Product
+
 
 class TestProductModels(TestCase):
     """ """
