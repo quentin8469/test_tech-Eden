@@ -7,7 +7,7 @@ from product.serializers import ProductSerializer
 
 class ProductViewset(viewsets.ModelViewSet):
     """ 
-    API end point that allows products to be wiev by authenticated users
+    API end point that allows products to be view by authenticated users
     """
     serializer_class = ProductSerializer
     queryset = Product.objects.all()
