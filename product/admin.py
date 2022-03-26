@@ -11,5 +11,6 @@ class ProductAdmin(admin.ModelAdmin):
                     "section", 
                     "reduction", 
                     "date_created", 
-                    "date_updated"
+                    "date_updated",
+                    "id",
                     )
