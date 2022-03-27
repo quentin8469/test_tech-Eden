@@ -10,7 +10,7 @@ class CartViewset(viewsets.ModelViewSet):
     """ 
     API end point that allows products to be view in cart by authenticated users
     """
-    
+    premission_classe = [permissions.IsAuthenticated,]
     serializer_class = CartSerializer
     queryset = Cart.objects.all()
     

@@ -15,7 +15,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     USERNAME_FIELD = "username"
     REQUIRED_FIELDS = ["email"]
 
-    object = CustomUserManager()
+    objects = CustomUserManager()
 
     class Meta:
         verbose_name = "User"
